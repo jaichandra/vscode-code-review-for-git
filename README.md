@@ -14,15 +14,63 @@ This extension has the following settings:
 
 * `codeReviewForGit.pullRequestUrl`: provide the complete bitbucket server url to the pull-request you want to use for code review.
 
-## Known Issues
+## Install
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+**Tested with VsCode 1.19.2  
 
-## Release Notes
+Press <kbd>F1</kbd> and narrow down the list commands by typing `extension`. Pick `Extensions: Install Extension`.
 
-Users appreciate release notes as you update your extension.
+![installation](screenshots/install.png?raw=true "installation")
+
+Simply pick the `Code Review for Git` extension from the list
+
+## Install Manual
+
+### Mac & Linux
+
+```sh
+cd $HOME/.vscode/extensions
+git clone https://github.com/jaichandra/vscode-code-review-for-git.git
+cd vscode-code-review-for-git
+npm install
+```
+
+### Windows
+
+```sh
+cd %USERPROFILE%\.vscode\extensions
+git clone https://github.com/jaichandra/vscode-code-review-for-git.git
+cd vscode-code-review-for-git
+npm install
+```
+
+## Usage
+
+### Command
+
+Press <kbd>F1</kbd> and type `Add Code Comment`.
+
+### Keybord Shortcut
+
+ Press <kbd>Ctrl+L G</kbd> to activate.
+
+### Context menu
+
+Right click on a line and choose `Add Code Comment`.
+
+![context](screenshots/context-menu.png?raw=true "Context menu options")
+
+### Configure custom github domain
+
+Add following line into workspace settings;
+
+```js
+{
+  "codeReviewForGit.pullRequestUrl":"your pull-request url",
+}
+```
 
 ## Credits
 
+A lot is inspired and picked from below extension.
 ### [vscode-open-in-github](https://github.com/ziyasal/vscode-open-in-github)
-[License](https://github.com/ziyasal/vscode-open-in-github/blob/master/LICENSE)
