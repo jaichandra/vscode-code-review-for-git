@@ -24,7 +24,7 @@ Press <kbd>F1</kbd> and narrow down the list commands by typing `extension`. Pic
 
 Simply pick the `Code Review for Git` extension from the list.
 
-## Install from VSIX
+## Install from VSIX file
 
 Download the `.vsix` file from the [Releases](https://github.com/jaichandra/vscode-code-review-for-git/releases) section.
 
@@ -80,6 +80,12 @@ Add following line into workspace settings;
 }
 ```
 
+## Publish VSIX file locally
+
+```sh
+npm install
+vsce package
+```
 ## Credits
 
 A lot is inspired and picked from below extension.
