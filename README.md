@@ -1,6 +1,6 @@
 # code-review-for-git README
 
-"code-review-for-git" is a VSCode extension for doing code reviews. The extension let you navigate from the current active file and line number in VSCode to its respective location on a configured pull request in browser. 
+`code-review-for-git` is a VS Code extension for doing code reviews. The extension let you navigate from the current active file and line number in VS Code to its respective location on a configured pull request in browser. 
 
 This is currently supported for BitBucket Server ONLY. Other git service providers will be added.
 
@@ -16,14 +16,21 @@ This extension has the following settings:
 
 ## Install
 
-**Tested with VsCode 1.19.2  
+**Tested with VS Code 1.19.2  
 
 Press <kbd>F1</kbd> and narrow down the list commands by typing `extension`. Pick `Extensions: Install Extension`.
 
-![installation](screenshots/install.png?raw=true "installation")
+![install](https://user-images.githubusercontent.com/302617/35185001-f426afba-fdca-11e7-9f5d-807ffe17e20a.png)
 
-Simply pick the `Code Review for Git` extension from the list
+Simply pick the `Code Review for Git` extension from the list.
 
+## Install from VSIX
+
+Download the `.vsix` file from the [Releases](https://github.com/jaichandra/vscode-code-review-for-git/releases) section.
+
+```sh
+code --install-extension /path/to/code-review-for-git-<version>.vsix
+```
 ## Install Manual
 
 ### Mac & Linux
@@ -50,6 +57,8 @@ npm install
 
 Press <kbd>F1</kbd> and type `Add Code Comment`.
 
+<img width="1280" alt="screenshot 2018-01-20 10 03 36" src="https://user-images.githubusercontent.com/302617/35184886-45dd0b9e-fdc9-11e7-9c4a-597d818be9a0.png">
+
 ### Keybord Shortcut
 
  Press <kbd>Ctrl+L G</kbd> to activate.
@@ -58,7 +67,8 @@ Press <kbd>F1</kbd> and type `Add Code Comment`.
 
 Right click on a line and choose `Add Code Comment`.
 
-![context](screenshots/context-menu.png?raw=true "Context menu options")
+<img width="281" alt="screenshot 2018-01-20 10 13 00" src="https://user-images.githubusercontent.com/302617/35184978-881e0db8-fdca-11e7-971f-594a2ce1013e.png">
+
 
 ### Configure custom github domain
 
