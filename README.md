@@ -61,7 +61,7 @@ Press <kbd>F1</kbd> and type `Add Code Comment`.
 
 ### Keybord Shortcut
 
- Press <kbd>Ctrl+L G</kbd> to activate.
+ Press <kbd>Ctrl+C</kbd> to activate.
 
 ### Context menu
 
